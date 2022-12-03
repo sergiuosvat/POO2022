@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Testing {
-    // the requirements of the task are very ambiguous so perhaps some methods might not correspond to what i was expected to do.
+    // the requirements of the task are ambiguous so perhaps some methods might not correspond to what i was expected to do.
     public static void main(String[] args) {
 
         Account a1 = new Account(1);
