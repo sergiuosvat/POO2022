@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.canvas.Canvas?>
+<BorderPane fx:id="borderPane"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="paint.paintapp.PaintController">
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu>
+                    <graphic>
+                        <Label text="Save" onMouseClicked="#onSave"/>
+                    </graphic>
+                </Menu>
+            </MenuBar>
+            <ToolBar>
+                <HBox alignment="CENTER" spacing="5">
+                    <TextField fx:id="brushSize" text="18" />
+                    <ColorPicker fx:id="colorPicker" />
+                    <CheckBox fx:id="eraser"  text="eraser"/>
+                </HBox>
+            </ToolBar>
+        </VBox>
+    </top>
+
+    <center>
+        <Canvas fx:id="canvas"/>
+    </center>
+
+</BorderPane>
